@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/bishe?useUnicode=true&&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: root
+#    type: com.alibaba.druid.pool.DruidDataSource
+  mvc:
+    view:
+      prefix: /WEB-INF/templates/
+      suffix: .html
+  resources:
+    static-locations: classpath:/templates  #访问静态页面
+server:
+  port: 8088
